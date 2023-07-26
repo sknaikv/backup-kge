@@ -429,17 +429,42 @@ function enabledisableTB2() {
 
 
 
-const smallgender = document.getElementById('small-gender');
+// const smallgender = document.getElementById('small-gender');
 function selectedgender() {
-    var selected = document.querySelector('input[name="gender"]:checked');
-    if (selected) {
+
+    
+    if(document.getElementById('male').checked){
         document.getElementById('gender').style.borderColor = 'green';
-        smallgender.style.display="none";
-    } else {
+        document.getElementById('small-gender').style.display="none";
+    }else if(document.getElementById('female').checked){
+        document.getElementById('gender').style.borderColor = 'green';
+        document.getElementById('small-gender').style.display="none";
+    }else if(document.getElementById('other').checked){
+        document.getElementById('gender').style.borderColor = 'green';
+        document.getElementById('small-gender').style.display="none";
+    }else{
         document.getElementById('gender').style.borderColor = '#BC383E';
-        smallgender.style.display="inline";
+        document.getElementById('small-gender').style.display="inline";
+
     }
 }
+
+
+ // var selected = document.querySelector('input[name="gender"]:checked');
+    // if (selected) {
+    //     document.getElementById('gender').style.borderColor = 'green';
+    //     smallgender.style.display="none";
+    // } else if(document.getElementById('male').checked){
+    //     document.getElementById('gender').style.borderColor = 'green';
+        
+    // }else if(document.getElementById('male').checked){
+    //     document.getElementById('gender').style.borderColor = 'green';
+    // }else if(document.getElementById('other').checked){
+    //     document.getElementById('gender').style.borderColor = 'green';
+    // }else{
+    //     document.getElementById('gender').style.borderColor = '#BC383E';
+    //     smallgender.style.display="inline";
+    // }
 
 
 
