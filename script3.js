@@ -309,7 +309,7 @@ form1.addEventListener('submit', function (e) {
     //         console.log('form 1 contains errors')
     //     }
     // }
-    
+
 
     //email reinitiate
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -505,11 +505,21 @@ form6.addEventListener('submit', function (e) {
             submit.onclick = function () {
                 e.preventDefault();
                 fieldset.style.borderColor = '#BC383E';
+                // progressCheck[current - 1].classList.remove("active");
+                // progressText[current - 1].classList.remove("active");
+                bullet[current - 1].classList.remove("active");
+
             }
             fieldset.style.borderColor = '#BC383E';
+            // progressCheck[current - 1].classList.remove("active");
+            // progressText[current - 1].classList.remove("active");
+            bullet[current - 1].classList.remove("active");
         } else {
             e.preventDefault();
             fieldset.style.borderColor = '#BC383E';
+            // progressCheck[current - 1].classList.remove("active");
+            // progressText[current - 1].classList.remove("active");
+            bullet[current - 1].classList.remove("active");
         }
 
         tnc.addEventListener('change', () => {
@@ -527,27 +537,28 @@ form6.addEventListener('submit', function (e) {
                         progressCheck[current - 1].classList.add("active");
                         progressText[current - 1].classList.add("active");
                         current += 1;
-                        alert("submitted successfully")
-                        location.reload();
                     })
                 }
             } else if (!input.checked) {
                 submit.onclick = function () {
                     e.preventDefault();
                     fieldset.style.borderColor = '#BC383E';
-                    bullet[current - 1].classList.add("active");
-                    progressCheck[current - 1].classList.add("active");
-                    progressText[current - 1].classList.add("active");
-                    current += 1;
+                    // progressCheck[current - 1].classList.remove("active");
+                    // progressText[current - 1].classList.remove("active");
+                    bullet[current - 1].classList.remove("active");
                 }
                 fieldset.style.borderColor = '#BC383E';
+                // progressCheck[current - 1].classList.remove("active");
+                // progressText[current - 1].classList.remove("active");
+                bullet[current - 1].classList.remove("active");
             } else {
                 e.preventDefault();
                 fieldset.style.borderColor = '#BC383E';
             }
-
-
+            
+            
         })
+        bullet[current - 1].classList.remove("active");
         // fieldset.style.borderColor = '#BC383E';
     }
 
