@@ -768,7 +768,16 @@
     background-color: #BC383E;
   }
 
-
+  #small-gender{
+    color: #BC383E;
+    display: none;
+    margin-left: 83px;
+    /* display: inline; */
+    width: max-content;
+    /* margin-top: 14px; */
+    position: relative;
+    top: 12px;
+  }
 
   #form2 {
     position: absolute;

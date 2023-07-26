@@ -429,12 +429,17 @@ function enabledisableTB2() {
     }
 }
 
+
+
+const smallgender = document.getElementById('small-gender');
 function selectedgender() {
     var selected = document.querySelector('input[name="gender"]:checked');
     if (selected) {
         document.getElementById('gender').style.borderColor = 'green';
+        smallgender.style.display="none";
     } else {
         document.getElementById('gender').style.borderColor = '#BC383E';
+        smallgender.style.display="inline";
     }
 }
 
