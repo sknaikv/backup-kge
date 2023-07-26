@@ -502,7 +502,11 @@ form6.addEventListener('submit', function (e) {
                 setTimeout(function () {
                     alert("submitted successfully")
                     location.reload();
-                })
+                }, 1000)
+                bullet[current - 1].classList.add("active");
+                progressCheck[current - 1].classList.add("active");
+                progressText[current - 1].classList.add("active");
+                current += 1;
             }
         } else if (!input.checked) {
             submit.onclick = function () {
@@ -558,8 +562,8 @@ form6.addEventListener('submit', function (e) {
                 e.preventDefault();
                 fieldset.style.borderColor = '#BC383E';
             }
-            
-            
+
+
         })
         bullet[current - 1].classList.remove("active");
         // fieldset.style.borderColor = '#BC383E';
