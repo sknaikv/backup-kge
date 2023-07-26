@@ -293,8 +293,8 @@ function getfieldName(input) {
 form1.addEventListener('submit', function (e) {
     e.preventDefault();
     checkRequired([firstname, lastname, contact, email, country, city]);
-    checkLength(firstname, 3, 15);
-    checkLength(lastname, 3, 15);
+    checkLength(firstname, 1, 15);
+    checkLength(lastname, 1, 15);
     checkEmail(email);
     checkNumber(contact);
     checkcountry(country);
