@@ -768,7 +768,7 @@
     background-color: #BC383E;
   }
 
-  #small-gender{
+  #small-gender {
     color: #BC383E;
     display: none;
     margin-left: 83px;
@@ -1709,7 +1709,7 @@
       left: 27px;
     }
 
-    .form-content{
+    .form-content {
       height: 500vh;
     }
   }
@@ -1859,10 +1859,7 @@
       width: 50px;
     }
 
-    .ri-arrow-up-line {
-
-
-    }
+    .ri-arrow-up-line {}
   }
 
   @media screen and (min-width:450px) and (max-width:500px) {
@@ -2047,14 +2044,72 @@
   }
 
 
-  @media screen and (min-width:200px) and (max-width:700px){
-    .btn-next>a>button{
+  @media screen and (min-width:200px) and (max-width:700px) {
+    .btn-next>a>button {
       width: 90px;
     }
-  
+
     #reset {
-      width: 90px!important;
+      width: 90px !important;
     }
+  }
+
+  @media screen and (min-width:1400px) and (max-width:1500px){
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 154px;
+      right: -150px;
+      left: 37px;
+      /* bottom: 18px; */
+    }
+  }
+
+  @media screen and (min-width:1500px) and (max-width:1600px) {
+    .form-content {
+      height: 500vh;
+    }
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 182px;
+      right: -150px;
+      left: 37px;
+      bottom: 18px;
+    }
+
+    .progress-bar .step .bullet {
+      width: 40px;
+      height: 40px;
+    }
+
+    .progress-bar .step .bullet span {
+      display: contents;
+    }
+
+  }
+
+  @media screen and (min-width:1601px) and (max-width:1800px) {
+    .form-content {
+      height: 500vh;
+    }
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 206px;
+      right: -150px;
+      left: 37px;
+      bottom: 18px;
+    }
+
+    .progress-bar .step .bullet {
+      width: 40px;
+      height: 40px;
+    }
+
+    .progress-bar .step .bullet span {
+      display: contents;
+    }
+
   }
 
   /* 
