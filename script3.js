@@ -8,7 +8,7 @@ const contact = document.getElementById('contact');
 const email = document.getElementById('email');
 const country = document.getElementById('country');
 const city = document.getElementById('city');
-const whatsappnumber = document.getElementById('whatsappnumber');
+// const whatsappnumber = document.getElementById('whatsappnumber');
 const male = document.getElementById('male');
 const female = document.getElementById('female');
 const other = document.getElementById('other');
@@ -292,12 +292,11 @@ function getfieldName(input) {
 //form1 event listener
 form1.addEventListener('submit', function (e) {
     e.preventDefault();
-    checkRequired([firstname, lastname, contact, email, country, whatsappnumber, city]);
+    checkRequired([firstname, lastname, contact, email, country, city]);
     checkLength(firstname, 3, 15);
     checkLength(lastname, 3, 15);
     checkEmail(email);
     checkNumber(contact);
-    checkWANumber(whatsappnumber);
     checkcountry(country);
     checkcity(city);
 
