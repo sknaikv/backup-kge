@@ -462,6 +462,7 @@ function checkref(input) {
             window.scrollTo(100, 100)
         }
     } else {
+        input.preventDefault();
         showerror(input, 'Reference is required');
     }
 }
@@ -469,8 +470,10 @@ function checkref(input) {
 function checkLengthref(input, min, max) {
     if (input.value.length < min) {
         showerror(input, `${getfieldName(input)} must be atleast  ${min} characters`);
+        input.preventDefault();
     } else if (input.value.length > max) {
         showerror(input, `${getfieldName(input)} must be less than ${max} characters`);
+        input.preventDefault();
     } else {
         showsuccess(input);
         next5.onclick = function () {

@@ -55,7 +55,7 @@
   .ri-arrow-up-line {
     width: 100%;
     height: 100%;
-    font-size: 50px;
+    font-size: 40px;
     color: #071b5e;
     font-weight: 800;
   }
@@ -608,7 +608,7 @@
     text-decoration-color: #0a288b52;
   }
 
-/* #form1,#form2,#form3,#form4,#form5,#form6{
+  /* #form1,#form2,#form3,#form4,#form5,#form6{
   margin-top: 100px;
 } */
 
@@ -640,7 +640,7 @@
     margin-top: -20px;
   }
 
-  
+
   #form1 {
     position: absolute;
     background-color: #fff;
@@ -1073,7 +1073,7 @@
 
   /* *************************progress***************************** */
 
-  .progress-bar{
+  .progress-bar {
     display: flex;
     margin: 65px auto;
     z-index: 100;
@@ -1082,32 +1082,32 @@
     height: max-content;
   }
 
-  .ri-check-line{
+  .ri-check-line {
     color: green;
     font-size: 25px;
     font-weight: 800;
   }
 
-  .progress-bar .step{
+  .progress-bar .step {
     position: relative;
     text-align: center;
     width: 100%;
 
   }
 
-  .progress-bar .step p{
+  .progress-bar .step p {
     font-size: 16px;
     font-weight: 500;
     color: black;
     margin-bottom: 6px;
     transition: 0.5s;
   }
-  
-  .progress-bar .step p.active{
+
+  .progress-bar .step p.active {
     color: #0a288b;
   }
 
-  .progress-bar .step .bullet{
+  .progress-bar .step .bullet {
     position: relative;
     height: 25px;
     width: 25px;
@@ -1119,22 +1119,22 @@
     line-height: 25px;
     transition: 0.5s;
   }
-  
-  .progress-bar .step .bullet.active{
-    border-color:  #0a288b;
+
+  .progress-bar .step .bullet.active {
+    border-color: #0a288b;
     background-color: #0a288b;
 
   }
 
-  
+
   .progress-bar .step:last-child .bullet::before,
-  .progress-bar .step:last-child .bullet::after{
+  .progress-bar .step:last-child .bullet::after {
     display: none;
   }
-  
-  
+
+
   .progress-bar .step .bullet::before,
-  .progress-bar .step .bullet::after{
+  .progress-bar .step .bullet::after {
     position: absolute;
     content: '';
     height: 3px;
@@ -1144,21 +1144,21 @@
     background: rgba(61, 60, 60, 0.171);
   }
 
-  .progress-bar .step .bullet.active:after{
+  .progress-bar .step .bullet.active:after {
     transform: scaleX(0);
     background-color: #071b5e;
     transform-origin: left;
     animation: animate 0.8s linear forwards;
   }
 
-  @keyframes animate{
-    100%{
+  @keyframes animate {
+    100% {
       transform: scaleX(1);
     }
   }
 
 
-  .progress-bar .step .bullet span{
+  .progress-bar .step .bullet span {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
@@ -1166,22 +1166,22 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  
-  .progress-bar .step .bullet.active span{
+
+  .progress-bar .step .bullet.active span {
     display: none;
   }
 
 
-  .progress-bar .step .check{
+  .progress-bar .step .check {
     position: absolute;
     left: 50%;
     top: 70%;
     font-size: 25px;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     display: none;
   }
 
-  .progress-bar .step .check.active{
+  .progress-bar .step .check.active {
     display: block;
     color: #fff;
   }
@@ -1331,7 +1331,7 @@
       overflow: auto;
     }
 
-  
+
 
     .navbar {
       height: 120px;
@@ -1351,7 +1351,7 @@
     }
 
     #form4>.monthofinternship {
-      display: grid!important;
+      display: grid !important;
       align-items: center;
       margin-top: -20px;
     }
@@ -1468,15 +1468,18 @@
   }
 
 
-  @media screen and (min-width:200px) and (max-width:750px){
-    #form4,#form5,#form6{
+  @media screen and (min-width:200px) and (max-width:750px) {
+
+    #form4,
+    #form5,
+    #form6 {
       font-size: 0.65rem;
     }
   }
 
   @media screen and (min-width:200px) and (max-width:450px) {
     .left-nav>h3 {
-      font-size: 12px;
+      font-size: 15px;
       white-space: nowrap;
     }
 
@@ -1489,7 +1492,7 @@
     }
 
     .left-nav>h3>span {
-      font-size: 12px;
+      font-size: 15px;
     }
 
     .left-nav>.logo>a>img {
@@ -1685,6 +1688,349 @@
       border-radius: 3px solid #e3e3e3;
       border-right-color: #0a288b;
     }
+  }
+
+
+  @media screen and (min-width:1200px) and (max-width:1300px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 139px;
+      right: -150px;
+      left: 27px;
+    }
+  }
+
+  @media screen and (min-width:1100px) and (max-width:1200px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 110px;
+      right: -87px;
+      left: 33px;
+    }
+  }
+
+  @media screen and (min-width:1000px) and (max-width:1100px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 100px;
+      right: auto;
+      left: 35px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.8rem;
+    }
+
+    .progress-bar .step .check.active {
+      font-size: 20px;
+      top: 35px;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width:900px) and (max-width:1000px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 85px;
+      right: auto;
+      left: 30px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.75rem;
+    }
+
+    .progress-bar .step .check.active {
+      font-size: 20px;
+      top: 35px;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width:800px) and (max-width:900px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 75px;
+      right: auto;
+      left: 30px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.70rem;
+    }
+
+    .progress-bar .step .check.active {
+      font-size: 20px;
+      top: 35px;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width:700px) and (max-width:800px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 67px;
+      right: auto;
+      left: 30px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.65rem;
+    }
+
+    .progress-bar .step .check.active {
+      font-size: 20px;
+      top: 35px;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width:600px) and (max-width:700px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 59px;
+      right: auto;
+      left: 25px;
+    }
+
+
+
+    .progress-bar .step p {
+      font-size: 0.5rem;
+      font-weight: 800;
+    }
+
+    .progress-bar .step .check.active {
+      font-size: 20px;
+      top: 30px;
+      color: white;
+    }
+  }
+
+  @media screen and (min-width:500px) and (max-width:600px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 45px;
+      right: auto;
+      left: 23px;
+      top: 6px;
+      margin: 0px auto;
+    }
+
+    .progress-bar .step .bullet {
+      width: 20px;
+      height: 20px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.47rem;
+      font-weight: 600;
+    }
+
+    .progress-bar .step .check.active {
+      font-size: 20px;
+      top: 30px;
+      color: white;
+    }
+
+    .topview {
+      height: 50px;
+      width: 50px;
+    }
+
+    .ri-arrow-up-line {
+
+
+    }
+  }
+
+  @media screen and (min-width:450px) and (max-width:500px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 38px;
+      right: auto;
+      left: 21px;
+      top: 6px;
+      margin: 0px auto;
+    }
+
+    .progress-bar .step .bullet {
+      width: 20px;
+      height: 20px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.42rem;
+      font-weight: 600;
+      /* margin-bottom: 30px; */
+    }
+
+    .progress-bar .step .check.active {
+      font-size: 20px;
+      top: 25px;
+      color: white;
+    }
+
+    .topview {
+      height: 50px;
+      width: 50px;
+    }
+
+    .ri-arrow-up-line {
+      width: 80%;
+      height: 80%;
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (min-width:350px) and (max-width:450px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 29px;
+      right: auto;
+      left: 19px;
+      top: 6px;
+      margin: 0px auto;
+    }
+
+    .progress-bar .step .bullet {
+      width: 20px;
+      height: 20px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.42rem;
+      font-weight: 600;
+      /* margin-bottom: 80px; */
+      position: relative;
+      top: -6px;
+      display: none;
+    }
+
+    .topview {
+      height: 50px;
+      width: 50px;
+      left: 78%;
+    }
+
+    .ri-arrow-up-line {
+      width: 80%;
+      height: 80%;
+      font-size: 30px;
+    }
+
+    #form1,
+    #form2>h3 {
+      margin-top: 20px;
+    }
+
+    .progress-bar {
+      left: 5%;
+      position: relative;
+    }
+
+    /* .progress-bar .step:first-child .bullet::before,
+    .progress-bar .step:first-child .bullet::after {
+      display: flex;
+    } */
+
+    .progress-bar .step:nth-child(1),
+    .progress-bar .step:nth-child(2),
+    .progress-bar .step:nth-child(3),
+    .progress-bar .step:nth-child(4),
+    .progress-bar .step:nth-child(5),
+    .progress-bar .step:nth-child(6) {
+      display: flex;
+      line-height: 15px;
+    }
+
+    .progress-bar .step .check.active {
+      display: block;
+      color: #ffffff;
+      position: relative;
+      left: -17%;
+      font-size: 20px;
+    }
+
+
+  }
+
+  @media screen and (min-width:250px) and (max-width:350px) {
+
+    .progress-bar .step .bullet::before,
+    .progress-bar .step .bullet::after {
+      width: 25px;
+      right: auto;
+      left: 19px;
+      top: 6px;
+      margin: 0px auto;
+    }
+
+    .progress-bar .step .bullet {
+      width: 20px;
+      height: 20px;
+    }
+
+    .progress-bar .step p {
+      font-size: 0.42rem;
+      font-weight: 600;
+      /* margin-bottom: 80px; */
+      position: relative;
+      top: -6px;
+      display: none;
+    }
+
+    .progress-bar {
+      left: 5%;
+      position: relative;
+    }
+
+    .topview {
+      height: 45px;
+      width: 45px;
+      left: 78%;
+    }
+
+    .ri-arrow-up-line {
+      width: 50%;
+      height: 50%;
+      font-size: 30px;
+    }
+
+    /* .progress-bar .step:first-child .bullet::before,
+    .progress-bar .step:first-child .bullet::after {
+      display: flex;
+    } */
+
+    .progress-bar .step:nth-child(1),
+    .progress-bar .step:nth-child(2),
+    .progress-bar .step:nth-child(3),
+    .progress-bar .step:nth-child(4),
+    .progress-bar .step:nth-child(5),
+    .progress-bar .step:nth-child(6) {
+      display: flex;
+      line-height: 15px;
+    }
+
+    .progress-bar .step .check.active {
+      display: block;
+      color: #ffffff;
+      position: relative;
+      left: -17%;
+      font-size: 20px;
+    }
+
+
   }
 
   /* 
