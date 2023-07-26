@@ -760,14 +760,14 @@
 
 
   .btn-next>a>button:hover {
-    width: 105px;
-    background-color: #071b5e;
+    background-color: #021552;
   }
 
   #reset:hover {
     border: 1px solid #911d23;
     background-color: #BC383E;
   }
+
 
 
   #form2 {
@@ -2031,6 +2031,17 @@
     }
 
 
+  }
+
+
+  @media screen and (min-width:200px) and (max-width:700px){
+    .btn-next>a>button{
+      width: 90px;
+    }
+  
+    #reset {
+      width: 90px!important;
+    }
   }
 
   /* 
