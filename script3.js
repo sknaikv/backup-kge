@@ -218,26 +218,25 @@ function checkNumber(input) {
 
 }
 
-function checkWANumber(input) {
-    var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-    if (re.test(input.value.trim())) {
-        showsuccess(input);
-        next1.onclick = function () {
-            form1.style.left = "-50%";
-            form2.style.left = "50%"
-            bullet[current - 1].classList.add("active");
-            progressCheck[current - 1].classList.add("active");
-            progressText[current - 1].classList.add("active");
-            current += 1;
-            // progress.style.width = "28%"
-            window.scrollTo(100, 100)
-        }
-        return true;
-    } else {
-        showerror(input, 'WhatsApp Number is  required');
-    }
+// function checkWANumber(input) {
+//     var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+//     if (re.test(input.value.trim())) {
+//         showsuccess(input);
+//         next1.onclick = function () {
+//             form1.style.left = "-50%";
+//             form2.style.left = "50%"
+//             bullet[current - 1].classList.add("active");
+//             progressCheck[current - 1].classList.add("active");
+//             progressText[current - 1].classList.add("active");
+//             current += 1;
+//             window.scrollTo(100, 100)
+//         }
+//         return true;
+//     } else {
+//         showerror(input, 'WhatsApp Number is  required');
+//     }
 
-}
+// }
 
 function checkcountry() {
     var country = document.getElementById("country");
