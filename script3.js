@@ -18,7 +18,7 @@ const gender = document.getElementById('gender');
 //form2
 const form2 = document.getElementById("form2");
 const degree = document.getElementById('degree');
-const passdate = document.getElementById('passdate');
+const yearpicker = document.getElementById('yearpicker');
 
 
 //form5
@@ -58,6 +58,8 @@ const progressCheck = document.querySelectorAll(".step .check");
 const bullet = document.querySelectorAll(".step .bullet");
 let max = 6;
 let current = 1;
+
+
 
 
 // bullet[current - 1].classList.add("active");
@@ -150,6 +152,10 @@ function checkEmail(input) {
     }
 }
 
+// $(function(){
+//     $("#passdate").passdate({dateFormat: 'yy'});
+// })
+
 
 //check required
 
@@ -212,8 +218,10 @@ function checkNumber(input) {
             window.scrollTo(100, 100)
         }
         return true;
+    } else if (input.value > 10) {
+        showerror(input, 'Enter a valid Contact number');
     } else {
-        showerror(input, 'Contact Number is required');
+        showerror(input, 'Contact number is required')
     }
 
 }
@@ -250,6 +258,16 @@ function checkcountry() {
         showerror(country, 'Country is required')
 
     }
+
+    // let countryops = document.getElementsByClassName('country-ops');
+
+    // for(let i=0;i<countryops.length;i++){
+    //     countryops[i].onclick = function(){
+    //         let target = document.body;
+    //         target.style.backgroundColor='green';
+
+    //     }
+    // }
 }
 
 // function resettored(){
@@ -337,16 +355,16 @@ form1.addEventListener('submit', function (e) {
 
 form2.addEventListener('submit', function (e) {
     e.preventDefault();
-    checkRequired([degree, passdate]);
+    checkRequired([degree, yearpicker]);
     checkdegree(degree)
-    checkdate(passyear);
+    chkyearpicker(yearpicker);
 
 
 })
 
 
 function checkdegree(input) {
-    var letters = /\s/g;
+    var letters = /^[A-Za-z]+$/;
     if (input.value.match(letters)) {
         showsuccess(input);
         next2.onclick = function () {
@@ -364,15 +382,26 @@ function checkdegree(input) {
     }
 }
 
-// function checkdate() {
-//    let isvaliddate = Date.parse('05/11/22');
-//     if(isvaliddate===''){
-//        document.getElementById('passdate').style.borderColor='#BC383E'
-//     }else{
-//        document.getElementById('passdate').style.borderColor='green'
-//    }
+function chkyearpicker() {
+    var yearpicker = document.getElementById("yearpicker");
+    if (yearpicker.selectedIndex == 0) {
+        showerror(yearpicker, 'Pass year is required')
+    } else if (yearpicker.selectedIndex > 0) {
+        showerror(yearpicker, null)
+        document.getElementById("yearpicker").style.borderColor = "green"
+        
+    } else if(yearpicker.selectedIndex==null) {
+        showerror(yearpicker, 'Pass year is required')
+        document.getElementById("yearpicker").style.borderColor = "#BC383E"
+        
+    }else{
+        document.getElementById("yearpicker").style.borderColor = "#BC383E"
 
-// }
+    }
+
+}
+
+
 
 
 form3.addEventListener('submit', function (e) {
@@ -432,39 +461,52 @@ function enabledisableTB2() {
 // const smallgender = document.getElementById('small-gender');
 function selectedgender() {
 
-    
-    if(document.getElementById('male').checked){
-        document.getElementById('gender').style.borderColor = 'green';
-        document.getElementById('small-gender').style.display="none";
-    }else if(document.getElementById('female').checked){
-        document.getElementById('gender').style.borderColor = 'green';
-        document.getElementById('small-gender').style.display="none";
-    }else if(document.getElementById('other').checked){
-        document.getElementById('gender').style.borderColor = 'green';
-        document.getElementById('small-gender').style.display="none";
-    }else{
-        document.getElementById('gender').style.borderColor = '#BC383E';
-        document.getElementById('small-gender').style.display="inline";
 
+    if (document.getElementById('male').checked) {
+        document.getElementById('gender').style.borderColor = 'green';
+        document.getElementById('small-gender').style.display = "none";
+    } else if (document.getElementById('female').checked) {
+        document.getElementById('gender').style.borderColor = 'green';
+        document.getElementById('small-gender').style.display = "none";
+    } else if (document.getElementById('other').checked) {
+        document.getElementById('gender').style.borderColor = 'green';
+        document.getElementById('small-gender').style.display = "none";
+    } else {
+        document.getElementById('gender').style.borderColor = '#BC383E';
+        document.getElementById('small-gender').style.display = "inline";
+
+    }
+
+
+    let genderops = document.getElementsByName('genderr');
+
+    for (let i = 0; i < genderops.length; i++) {
+        genderops[i].onclick = function () {
+            let target = document.getElementById('gender');
+            let target2 = document.getElementById('small-gender');
+            target.style.borderColor = 'green';
+            target2.style.display = 'none';
+
+        }
     }
 }
 
 
- // var selected = document.querySelector('input[name="gender"]:checked');
-    // if (selected) {
-    //     document.getElementById('gender').style.borderColor = 'green';
-    //     smallgender.style.display="none";
-    // } else if(document.getElementById('male').checked){
-    //     document.getElementById('gender').style.borderColor = 'green';
-        
-    // }else if(document.getElementById('male').checked){
-    //     document.getElementById('gender').style.borderColor = 'green';
-    // }else if(document.getElementById('other').checked){
-    //     document.getElementById('gender').style.borderColor = 'green';
-    // }else{
-    //     document.getElementById('gender').style.borderColor = '#BC383E';
-    //     smallgender.style.display="inline";
-    // }
+// var selected = document.querySelector('input[name="gender"]:checked');
+// if (selected) {
+//     document.getElementById('gender').style.borderColor = 'green';
+//     smallgender.style.display="none";
+// } else if(document.getElementById('male').checked){
+//     document.getElementById('gender').style.borderColor = 'green';
+
+// }else if(document.getElementById('male').checked){
+//     document.getElementById('gender').style.borderColor = 'green';
+// }else if(document.getElementById('other').checked){
+//     document.getElementById('gender').style.borderColor = 'green';
+// }else{
+//     document.getElementById('gender').style.borderColor = '#BC383E';
+//     smallgender.style.display="inline";
+// }
 
 
 
