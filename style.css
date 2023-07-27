@@ -1195,6 +1195,13 @@
     color: #fff;
   }
 
+  #step-text{
+    position: relative;
+    top: -15px;
+    left: 20px;
+    display: none;
+  }
+
   /* *******************************footer**************** */
 
   footer {
@@ -1913,6 +1920,10 @@
       margin: 0px auto;
     }
 
+    #step-text{
+      display: block;
+    }  
+
     .progress-bar .step .bullet {
       width: 20px;
       height: 20px;
@@ -1945,7 +1956,7 @@
     }
 
     .progress-bar {
-      left: 5%;
+      left: 0%;
       position: relative;
     }
 
@@ -1991,6 +2002,10 @@
       height: 20px;
     }
 
+    #step-text{
+      display: block;
+    }  
+
     .progress-bar .step p {
       font-size: 0.42rem;
       font-weight: 600;
@@ -2001,7 +2016,7 @@
     }
 
     .progress-bar {
-      left: 5%;
+      left: 0%;
       position: relative;
     }
 

@@ -241,13 +241,13 @@ function checkNumber(input) {
 function checkcountry() {
     var country = document.getElementById("country");
     if (country.selectedIndex == 0) {
-        showerror(country, 'Country iss required')
+        showerror(country, 'Country is required')
     } else if (country.selectedIndex > 0) {
         showerror(country, null)
         document.getElementById("country").style.borderColor = "green"
 
     } else {
-        showerror(country, 'Country iss required')
+        showerror(country, 'Country is required')
 
     }
 }
