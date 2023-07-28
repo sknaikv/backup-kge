@@ -219,7 +219,7 @@ function checkNumber(input) {
         }
         return true;
     } else if (input.value > 10) {
-        showerror(input, 'Enter a valid Contact number');
+        showerror(input, 'Maximum limit 10 digits only');
     } else {
         showerror(input, 'Contact number is required')
     }
