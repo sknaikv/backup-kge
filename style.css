@@ -770,6 +770,10 @@
 
   }
 
+  .btn-next>a>button.pure-button-enabled{
+    
+  }
+
 
   .btn-next>a>button:hover {
     background-color: #021552;
@@ -782,14 +786,16 @@
 
   #small-gender {
     color: #BC383E;
-    display: none;
     margin-left: 83px;
     /* display: inline; */
     width: max-content;
     /* margin-top: 14px; */
     position: relative;
+    /* display: none; */
     top: 12px;
   }
+
+
 
   #form2 {
     position: absolute;
@@ -997,6 +1003,66 @@
   .form-control.success select {
     border-color: var(--success-color);
   }
+
+
+
+
+
+  /* ************************************************************* */
+
+  .form-control2 {
+    display: contents;
+  }
+
+  .form-control2.success input {
+    border-color: var(--success-color);
+  }
+
+  .form-control2.error input {
+    border-color: var(--error-color);
+  }
+
+  .form-control2 small {
+    color: var(--error-color);
+    /* position: relative; */
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+
+  .form-control2.error small {
+    visibility: visible;
+  }
+
+  .form-control2.success fieldset {
+    border-color: var(--success-color);
+  }
+
+  .form-control2.error fieldset {
+    border-color: var(--error-color);
+  }
+
+  .form-control2.success textarea {
+    border-color: var(--success-color);
+  }
+
+  .form-control2.error textarea {
+    border-color: var(--error-color);
+  }
+
+  .form-control2.error select {
+    border-color: var(--error-color);
+  }
+
+  .form-control2.success select {
+    border-color: var(--success-color);
+  }
+
+
+
+
+
+
 
 
   textarea {

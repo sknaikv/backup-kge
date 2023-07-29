@@ -22,6 +22,7 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- <script src="./index.js" defer></script> -->
     <!-- <script src="./script2.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script3.js" defer></script>
 </head>
 
@@ -220,7 +221,7 @@
             </div>
 
 
-            <form action="/" id="form1" name="form_1" method="post" onsubmit="return false;">
+            <form action="/" id="form1" name="form_1" class="formm1" method="post" onsubmit="return false;">
 
 
                 <h3 class="heading-form"
@@ -229,13 +230,13 @@
 
                 <div class="form-control">
                     <label style="padding-top: 45px;" for="fname">First Name <span>*</span><small></small></label>
-                    <input class="fname" type="text" name="f_name" id="firstname" placeholder="First Name" min="3">
+                    <input class="fname" type="text" name="f_name" id="firstname" placeholder="First Name">
 
                 </div>
 
                 <div class="form-control">
                     <label for="lname">Last Name<span>*</span><small></small></label>
-                    <input type="text" placeholder="Last Name" id="lastname" name="l_name" min="3">
+                    <input type="text" placeholder="Last Name" id="lastname" name="l_name">
 
                 </div>
 
@@ -248,7 +249,6 @@
                 <div class="form-control">
                     <label for="Email">Email<span>*</span><small></small></label>
                     <input type="email" name="" id="email" placeholder="Email">
-
                 </div>
 
 
@@ -290,7 +290,8 @@
                         <option class="country-ops" value="Botswana">Botswana</option>
                         <option class="country-ops" value="Bouvet Island">Bouvet Island</option>
                         <option class="country-ops" value="Brazil">Brazil</option>
-                        <option class="country-ops" value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                        <option class="country-ops" value="British Indian Ocean Territory">British Indian Ocean
+                            Territory</option>
                         <option class="country-ops" value="Brunei Darussalam">Brunei Darussalam</option>
                         <option class="country-ops" value="Bulgaria">Bulgaria</option>
                         <option class="country-ops" value="Burkina Faso">Burkina Faso</option>
@@ -309,7 +310,8 @@
                         <option class="country-ops" value="Colombia">Colombia</option>
                         <option class="country-ops" value="Comoros">Comoros</option>
                         <option class="country-ops" value="Congo">Congo</option>
-                        <option class="country-ops" value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The
+                        <option class="country-ops" value="Congo, The Democratic Republic of The">Congo, The Democratic
+                            Republic of The
                         </option>
                         <option class="country-ops" value="Cook Islands">Cook Islands</option>
                         <option class="country-ops" value="Costa Rica">Costa Rica</option>
@@ -329,14 +331,16 @@
                         <option class="country-ops" value="Eritrea">Eritrea</option>
                         <option class="country-ops" value="Estonia">Estonia</option>
                         <option class="country-ops" value="Ethiopia">Ethiopia</option>
-                        <option class="country-ops" value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                        <option class="country-ops" value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)
+                        </option>
                         <option class="country-ops" value="Faroe Islands">Faroe Islands</option>
                         <option class="country-ops" value="Fiji">Fiji</option>
                         <option class="country-ops" value="Finland">Finland</option>
                         <option class="country-ops" value="France">France</option>
                         <option class="country-ops" value="French Guiana">French Guiana</option>
                         <option class="country-ops" value="French Polynesia">French Polynesia</option>
-                        <option class="country-ops" value="French Southern Territories">French Southern Territories</option>
+                        <option class="country-ops" value="French Southern Territories">French Southern Territories
+                        </option>
                         <option class="country-ops" value="Gabon">Gabon</option>
                         <option class="country-ops" value="Gambia">Gambia</option>
                         <option class="country-ops" value="Georgia">Georgia</option>
@@ -354,8 +358,10 @@
                         <option class="country-ops" value="Guinea-bissau">Guinea-bissau</option>
                         <option class="country-ops" value="Guyana">Guyana</option>
                         <option class="country-ops" value="Haiti">Haiti</option>
-                        <option class="country-ops" value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
-                        <option class="country-ops" value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                        <option class="country-ops" value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald
+                            Islands</option>
+                        <option class="country-ops" value="Holy See (Vatican City State)">Holy See (Vatican City State)
+                        </option>
                         <option class="country-ops" value="Honduras">Honduras</option>
                         <option class="country-ops" value="Hong Kong">Hong Kong</option>
                         <option class="country-ops" value="Hungary">Hungary</option>
@@ -375,12 +381,14 @@
                         <option class="country-ops" value="Kazakhstan">Kazakhstan</option>
                         <option class="country-ops" value="Kenya">Kenya</option>
                         <option class="country-ops" value="Kiribati">Kiribati</option>
-                        <option class="country-ops" value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of
+                        <option class="country-ops" value="Korea, Democratic People's Republic of">Korea, Democratic
+                            People's Republic of
                         </option>
                         <option class="country-ops" value="Korea, Republic of">Korea, Republic of</option>
                         <option class="country-ops" value="Kuwait">Kuwait</option>
                         <option class="country-ops" value="Kyrgyzstan">Kyrgyzstan</option>
-                        <option class="country-ops" value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                        <option class="country-ops" value="Lao People's Democratic Republic">Lao People's Democratic
+                            Republic</option>
                         <option class="country-ops" value="Latvia">Latvia</option>
                         <option class="country-ops" value="Lebanon">Lebanon</option>
                         <option class="country-ops" value="Lesotho">Lesotho</option>
@@ -390,7 +398,8 @@
                         <option class="country-ops" value="Lithuania">Lithuania</option>
                         <option class="country-ops" value="Luxembourg">Luxembourg</option>
                         <option class="country-ops" value="Macao">Macao</option>
-                        <option class="country-ops" value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav
+                        <option class="country-ops" value="Macedonia, The Former Yugoslav Republic of">Macedonia, The
+                            Former Yugoslav
                             Republic of</option>
                         <option class="country-ops" value="Madagascar">Madagascar</option>
                         <option class="country-ops" value="Malawi">Malawi</option>
@@ -404,7 +413,8 @@
                         <option class="country-ops" value="Mauritius">Mauritius</option>
                         <option class="country-ops" value="Mayotte">Mayotte</option>
                         <option class="country-ops" value="Mexico">Mexico</option>
-                        <option class="country-ops" value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                        <option class="country-ops" value="Micronesia, Federated States of">Micronesia, Federated States
+                            of</option>
                         <option class="country-ops" value="Moldova, Republic of">Moldova, Republic of</option>
                         <option class="country-ops" value="Monaco">Monaco</option>
                         <option class="country-ops" value="Mongolia">Mongolia</option>
@@ -430,7 +440,8 @@
                         <option class="country-ops" value="Oman">Oman</option>
                         <option class="country-ops" value="Pakistan">Pakistan</option>
                         <option class="country-ops" value="Palau">Palau</option>
-                        <option class="country-ops" value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                        <option class="country-ops" value="Palestinian Territory, Occupied">Palestinian Territory,
+                            Occupied</option>
                         <option class="country-ops" value="Panama">Panama</option>
                         <option class="country-ops" value="Papua New Guinea">Papua New Guinea</option>
                         <option class="country-ops" value="Paraguay">Paraguay</option>
@@ -449,7 +460,8 @@
                         <option class="country-ops" value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
                         <option class="country-ops" value="Saint Lucia">Saint Lucia</option>
                         <option class="country-ops" value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                        <option class="country-ops" value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                        <option class="country-ops" value="Saint Vincent and The Grenadines">Saint Vincent and The
+                            Grenadines</option>
                         <option class="country-ops" value="Samoa">Samoa</option>
                         <option class="country-ops" value="San Marino">San Marino</option>
                         <option class="country-ops" value="Sao Tome and Principe">Sao Tome and Principe</option>
@@ -464,7 +476,8 @@
                         <option class="country-ops" value="Solomon Islands">Solomon Islands</option>
                         <option class="country-ops" value="Somalia">Somalia</option>
                         <option class="country-ops" value="South Africa">South Africa</option>
-                        <option class="country-ops" value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                        <option class="country-ops" value="South Georgia and The South Sandwich Islands">South Georgia
+                            and The South
                             Sandwich Islands</option>
                         <option class="country-ops" value="Spain">Spain</option>
                         <option class="country-ops" value="Sri Lanka">Sri Lanka</option>
@@ -477,7 +490,8 @@
                         <option class="country-ops" value="Syrian Arab Republic">Syrian Arab Republic</option>
                         <option class="country-ops" value="Taiwan">Taiwan</option>
                         <option class="country-ops" value="Tajikistan">Tajikistan</option>
-                        <option class="country-ops" value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                        <option class="country-ops" value="Tanzania, United Republic of">Tanzania, United Republic of
+                        </option>
                         <option class="country-ops" value="Thailand">Thailand</option>
                         <option class="country-ops" value="Timor-leste">Timor-leste</option>
                         <option class="country-ops" value="Togo">Togo</option>
@@ -494,7 +508,8 @@
                         <option class="country-ops" value="United Arab Emirates">United Arab Emirates</option>
                         <option class="country-ops" value="United Kingdom">United Kingdom</option>
                         <option class="country-ops" value="United States">United States</option>
-                        <option class="country-ops" value="United States Minor Outlying Islands">United States Minor Outlying Islands
+                        <option class="country-ops" value="United States Minor Outlying Islands">United States Minor
+                            Outlying Islands
                         </option>
                         <option class="country-ops" value="Uruguay">Uruguay</option>
                         <option class="country-ops" value="Uzbekistan">Uzbekistan</option>
@@ -516,30 +531,32 @@
                 <div class="form-control">
                     <label for="city">City<span>*</span><small></small></label>
                     <input type="text" name="" id="city" placeholder="City">
-
                 </div>
 
                 <!-- <div class="form-control"> -->
 
-                <small id="small-gender">Select a choice</small>
-                <fieldset id="gender">
-                    <legend>Gender<span style="color: #BC383E;">*</span></legend>
-                    <input type="radio" id="male" value="green" name="genderr">
-                    <label for="male">Male<small></small></label>
-                    <input type="radio" name="genderr" id="female" value="red">
-                    <label for="female">Female<small></small></label>
-                    <input type="radio" name="genderr" id="other" value="blue">
-                    <label for="other">Other</label>
-                </fieldset>
+                <!-- <small id="small-gender">Select a choice</small> -->
+                <div class="form-control">
+                    <small></small>
+                    <fieldset id="gender">
+                        <legend>Gender<span style="color: #BC383E;">*</span></legend>
+                        <input type="radio" value="green" name="genderr" id="radio-gender">
+                        <label for="male">Male</label>
+                        <input type="radio" name="genderr" value="red" id="radio-gender">
+                        <label for="female">Female</label>
+                        <input type="radio" name="genderr" value="blue" id="radio-gender">
+                        <label for="other">Other</label>
+                    </fieldset>
+                </div>
 
-                
+
 
 
                 <!-- </div> -->
 
                 <div class="btn-next">
-                    <a href=""><button onclick="resettored();" type="reset" id="reset">Clear</button></a>
-                    <a href="#form2"><button onclick="selectedgender();" type="submit" id="next1">Next</button></a>
+                    <a href=""><button type="reset" id="reset">Clear</button></a>
+                    <a href="#form2"><button type="submit" id="next1">Next</button></a>
                     <!-- <a href="#tophead"><button type="submit" >Test</button></a> -->
                 </div>
             </form>
@@ -551,15 +568,15 @@
                 <h3 style="padding: 0px 0px 10px 0px; border-bottom: 2px solid #0a288b8a;margin-top: 65px;">Educational
                     Details</h3>
 
-                <div class="form-control">
+                <div class="form-control2">
                     <label style="padding-top: 45px;" for="degree">Current Degree &
                         Branch<span>*</span><small></small></label>
                     <input type="text" placeholder="Your Recent Degree & Branch" id="degree">
                 </div>
 
-                <div class="form-control">
+                <div class="form-control2">
                     <label for="passed">Passed Out<span>*</span><small></small></label>
-                    <select name="year" id="yearpicker">
+                    <select name="year" id="passyear">
                         <option value="2000">--Select Pass Year--</option>
                         <option value="2000">2000</option>
                         <option value="2001">2001</option>
@@ -589,35 +606,11 @@
                     <!-- <input type="text" placeholder="Passed Out Year" id="passdate" value=""> -->
                 </div>
 
-                <!-- <h3>Personal Details</h3>
-                <label for="fname">First Name</label>
-                <input autocomplete="off" type="text" placeholder="First Name">
-                <label for="lname">Last Name</label>
-                <input type="text" placeholder="Last Name">
-                <label for="contact">Contact Number</label>
-                <input type="number" placeholder="Contact Number">
-                <label for="Email">Email</label>
-                <input type="email" name="" id="email" placeholder="Email">
-                <label for="whatsapp">Whatsapp Number</label>
-                <input type="number" name="whatsappnum" id="" placeholder="Whatsapp Number">
-                <label for="country">Country</label>
-                <input type="text" placeholder="Country">
-                <label for="city">City</label>
-                <input type="text" name="" id="city" placeholder="City">
-                <fieldset>
-                    <legend>Gender</legend>
-                    <input type="radio" id="male" value="Male" name="action">
-                    <label for="male">Male</label>
-                    <input type="radio" name="action" id="female" value="Female">
-                    <label for="female">Female</label>
-                    <input type="radio" name="action" id="other" value="Other">
-                    <label for="other">Other</label>
-                </fieldset> -->
 
                 <div class="btn-next">
                     <a href="#form1"><button type="button" id="back1">Back</button></a>
                     <a href=""><button type="reset" id="reset">Clear</button></a>
-                    <a href="#form3"><button onclick="chkyearpicker();" type="submit" id="next2">Next</button></a>
+                    <a href="#form3"><button type="submit" id="next2">Next</button></a>
                 </div>
             </form>
 
@@ -713,10 +706,13 @@
                         <input type="radio" name="#" onclick="enabledisableTB2();" required>
                     </li>
 
-                    <li>
-                        <label for="">Other:&nbsp; <span class="error"></span></label>
-                        <input type="radio" name="#" id="otherlan2" onclick="enabledisableTB2();" required>
-                        <input style="outline-color: #0a288b8a;" type="text" id="otherlang2" disabled>
+                    <li id="other-li">
+                        <div class="form-control3">
+                            <label for="">Other:</label>
+                            <input type="radio" name="#" id="otherlan2" onclick="enabledisableTB2();">
+                            <input style="outline-color: #0a288b8a;" type="text" id="otherlang2"
+                                disabled>&nbsp;<small></small>
+                        </div>
                     </li>
 
                     <li>
@@ -855,10 +851,13 @@
                         <input type="radio" name="action" onclick="enabledisableTB();" required>
                     </li>
 
-                    <li>
-                        <label for="">Other</label>
-                        <input type="radio" name="action" id="otherlan" onclick="enabledisableTB();" required>
-                        <input style="outline-color: #0a288b8a;" type="text" id="otherlang" disabled>
+                    <li id="other-li4">
+                        <div class="form-control4">
+                            <label for="">Other</label>
+                            <input type="radio" name="action" id="otherlan" onclick="enabledisableTB();" required>
+                            <input style="outline-color: #0a288b8a;" type="text" id="otherlang" disabled>
+                            <small></small>
+                        </div>
                     </li>
 
                 </ul>
@@ -871,12 +870,12 @@
                     with
                     Internet connectivity to work?<span style="color: #BC383E;">*</span></h4>
 
-                <li style="padding:20px 0px 0px 15px">
+                <li style="padding:20px 0px 0px 15px; display: flex; align-items: baseline;">
                     <label for="">Yes</label>
-                    <input type="radio" name="laptop" id="laptopid" required>
-                    <div class="form-control"></div>
+                    <input style="margin-left: 10px; margin-right: 10px;" type="radio" name="laptop" id="laptopid" required>
+                    <div class="form-control4"></div>
                     <label for="">No</label>
-                    <input type="radio" name="laptop" required>
+                    <input style="margin-left: 10px;" type="radio" name="laptop" required>
                 </li>
 
                 <div class="btn-next">
@@ -895,7 +894,7 @@
                 <h4 style="margin-top: 20px;">How You know about the Internship in KGE Technologies Pvt Ltd <span
                         style="color: #BC383E;">*</span>
                 </h4>
-                <div class="form-control">
+                <div class="form-control5">
                     <textarea name="ref" id="reference" cols="5" rows="5"></textarea>
                     <small></small>
                 </div>
@@ -911,8 +910,7 @@
             </form>
 
             <form action="/" id="form6" name="form_6" method="post">
-                <div class="form-control">
-
+                <div class="form-control6">
                     <fieldset id="fieldset" style="margin-top: 60px;">
                         <legend>Terms and Conditions <span style="color: #BC383E;    margin-top: 65px;">*</span>
                         </legend>
@@ -921,11 +919,11 @@
                             Form Submission for Internship</p>
 
                         <ul style="display: flex; align-items: center;padding: 10px 0px;">
-                            <input type="checkbox" name="tnc" id="t&C">
+                            <input type="checkbox" name="tnc" id="tnC">
                             <p style="margin-left: 10px;">I accept the Terms and Conditions.</p>
                         </ul>
-                        <small></small>
                     </fieldset>
+                    <small></small>
                 </div>
 
                 <p style="margin-top: 20px;">Recaptcha <span style="color: #BC383E;">*</span></p>
@@ -975,12 +973,27 @@
             loader.style.display = 'none';
         })
 
-        
-
-            
 
 
-        
+        // (function(){
+        //     $('form > input').keyup(function(){
+        //         var empty = false;
+        //         $('form > input').each(function(){
+        //             if($(this).val()==''){
+        //                 empty=true;
+        //             }
+        //         });
+
+        //         if(empty){
+        //             $('#btntext').attr('disabled','disabled');
+        //         }else{
+        //             $('#btntext').removeAttr('disabled');
+        //         }
+        //     });
+        // })()    
+
+
+
 
     </script>
 
