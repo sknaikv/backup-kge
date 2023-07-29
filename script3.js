@@ -133,24 +133,6 @@ back5.onclick = function () {
 
 
 
-
-//show errors
-
-// function showerror(input, message) {
-//     const formcontrol = input.parentElement;
-//     formcontrol.className = 'form-control error';
-//     const small = formcontrol.querySelector('small');
-//     small.innerText = message;
-// }
-
-// show success
-
-// function showsuccess(input) {
-//     formcontrol = input.parentElement;
-//     formcontrol.className = 'form-control success';
-// }
-
-
 // **********************************form1 validation************************************************************
 
 form1.addEventListener('submit', (event) => {
@@ -165,7 +147,7 @@ form1.addEventListener('submit', (event) => {
 const sendData = (sRate, count) => {
     if (sRate === count) {
         // alert('success');
-    
+
         form1.style.left = "-50%";
         form2.style.left = "50%"
         // progress.style.width = "28%"
@@ -282,7 +264,7 @@ const validateF1 = () => {
     for (let i = 0; i < genderops.length; i++) {
         genderops[i].onclick = function () {
             setSuccessmsg(genderbox)
-        }   
+        }
 
     }
     successMsgF1();
@@ -370,17 +352,36 @@ const validateF12 = () => {
     }
 
     //validate gender
-    let genderops = document.getElementsByName('genderr');
+    // let genderops = document.getElementsByName('genderr');
+
+
+    // for (let i = 0; i < genderops.length; i++) {
+    //     genderops[i].onclick = function () {
+    //        setSuccessmsg(genderbox);
+    //     }   
+    // }
+
+
+}
+
+
+
+//validate gender fucntion
+function gendernotclick() {
+    let radio1 = document.getElementById('radio-male');
+    let radio2 = document.getElementById('radio-female');
+    let radio3 = document.getElementById('radio-other');
     let genderbox = document.getElementById('gender');
 
-    for (let i = 0; i < genderops.length; i++) {
-        genderops[i].onclick = function () {
-            setSuccessmsg(genderbox)
-        }   
-
+    if (radio1.checked) {
+        setSuccessmsg(genderbox);
+    } else if (radio2.checked) {
+        setSuccessmsg(genderbox);
+    } else if (radio3.checked) {
+        setSuccessmsg(genderbox);
+    } else {
+        setErrormsg(genderbox, 'Select a choice');
     }
-
-
 }
 
 
@@ -405,13 +406,7 @@ form2.addEventListener('submit', (event) => {
 
 const sendDataf2 = (sRate, count) => {
     if (sRate === count) {
-        // alert('success');
-        // Swal.fire(
-        //     'Good job!',
-        //     'You clicked the button!',
-        //     'success'
-        // )
-
+      
         form2.style.left = "-50%";
         form3.style.left = "50%"
         bullet[current - 1].classList.add("active");
@@ -950,7 +945,7 @@ const sendDataf6 = (sRate, count) => {
         current += 1;
         Swal.fire(
             'Your Form has been submitted Successfully!'
-         )
+        )
         setTimeout(() => {
             location.reload();
         }, 3500);
@@ -987,10 +982,10 @@ const validateF6 = () => {
     const tnc = document.querySelector('#tnC');
 
 
-    if(tnc.checked){
+    if (tnc.checked) {
         setSuccessmsg(tncbox);
-    }else{
-        setErrormsg(tncbox,'Please accept the Terms and Conditions!');
+    } else {
+        setErrormsg(tncbox, 'Please accept the Terms and Conditions!');
     }
 
 
@@ -1014,10 +1009,10 @@ const validateF62 = () => {
     const tnc = document.querySelector('#tnC');
 
 
-    if(tnc.checked){
+    if (tnc.checked) {
         setSuccessmsg(tncbox);
-    }else{
-        setErrormsg(tncbox,'Please accept the Terms and Conditions!');
+    } else {
+        setErrormsg(tncbox, 'Please accept the Terms and Conditions!');
     }
 
 }
