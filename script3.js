@@ -171,7 +171,11 @@ const successMsgF1 = () => {
             var sRate = 0 + i;
             console.log(sRate);
             sendData(sRate, count);
-        } else {
+        } else if(formCon[i].className === "form-control default") {
+            var sRate = 0 + i;
+            console.log(sRate);
+            sendData(sRate, count);
+        }else{
             return false;
         }
     }
@@ -319,7 +323,7 @@ const validateF12 = () => {
     if (emailVal === "") {
         setErrormsg(email, 'Email is required');
     } else if (!isEmail(emailVal)) {
-        setErrormsg(email, 'Email is required');
+        setErrormsg(email, 'Enter a valid email address (eg: yourname@domain.com)');
     } else {
         setSuccessmsg(email);
     }
@@ -519,7 +523,10 @@ function setSuccessmsg(input) {
 }
 
 
-
+function setdefault(input){
+    const formcontrol = input.parentElement;
+    formcontrol.className = "form-control default"
+}
 
 
 
@@ -684,10 +691,13 @@ const validateF4 = () => {
         } else {
             setSuccessmsg(otherlang4);
         }
+    }else {
+        
     }
 
     successMsgF4();
 }
+
 
 
 
@@ -717,6 +727,8 @@ const validateF42 = () => {
         } else {
             setSuccessmsg(otherlang4);
         }
+    }else{
+        setdefault(otherlang4);
     }
 
 }
