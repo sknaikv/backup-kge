@@ -690,7 +690,7 @@
     /* box-shadow: 1px 5px 5px 5px rgba(0, 0, 0, 0.3), 0px 0px 0px 0px rgba(0, 0, 0, 0.3); */
     width: 98%;
     box-shadow: none;
-    border: 2px solid #0a288b;
+    border: 3.5px solid #0a288b;
     transform: translateX(-50%);
     left: 50%;
     /* display: none; */
@@ -1412,6 +1412,7 @@
     body {
       /* margin: 10px; */
       /* padding: 10px; */
+      touch-action: none;
     }
 
     #form3>ul {
@@ -1572,7 +1573,7 @@
     #form6 {
       width: 98%;
       box-shadow: none;
-      border: 2px solid #0a288b;
+      border: 3.5px solid #0a288b;
     }
 
   }
