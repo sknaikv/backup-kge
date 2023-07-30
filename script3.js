@@ -70,6 +70,61 @@ let current = 1;
 
 
 
+
+
+
+
+function formtrans(){
+    var tl = gsap.timeline();
+
+    tl.from(".main",{
+        y: '-10',
+        opacity: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut
+    })
+}
+
+function logotrans(){
+    var tl = gsap.timeline();
+
+    tl.from(".left-nav",{
+        x: '-15',
+        opacity: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut
+    })
+}
+
+function progresstrans(){
+    var tl = gsap.timeline();
+
+    tl.from(".step",{
+        x: '-15',
+        opacity: 0,
+        duration: 1.5,
+        stagger:.2,
+        ease: Expo.easeInOut
+    })
+}
+
+function inputtrans(){
+    var tl = gsap.timeline();
+
+    tl.from("input,label",{
+        x: '-15',
+        opacity: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut
+    })
+    
+}
+
+inputtrans();
+progresstrans();
+formtrans();
+logotrans();
+
 // bullet[current - 1].classList.add("active");
 // bullet[current - 1].classList.add("active");
 // current += 1;
@@ -364,6 +419,8 @@ const validateF12 = () => {
     //        setSuccessmsg(genderbox);
     //     }   
     // }
+
+    
 
 
 }
@@ -691,8 +748,6 @@ const validateF4 = () => {
         } else {
             setSuccessmsg(otherlang4);
         }
-    }else {
-        
     }
 
     successMsgF4();
@@ -727,8 +782,6 @@ const validateF42 = () => {
         } else {
             setSuccessmsg(otherlang4);
         }
-    }else{
-        setdefault(otherlang4);
     }
 
 }
@@ -959,7 +1012,7 @@ const sendDataf6 = (sRate, count) => {
             'Your Form has been submitted Successfully!'
         )
         setTimeout(() => {
-            location.reload();
+            location.reload('index.html#top');
         }, 3500);
 
     }

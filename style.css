@@ -657,6 +657,10 @@
   #form1 {
     position: absolute;
     background-color: #fff;
+    /* background: url(./images/bg1.gif); */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+    /* background-position: center; */
     display: flex;
     flex-direction: column;
     /* -webkit-backdrop-filter: blur(5px); */

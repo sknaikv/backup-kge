@@ -18,10 +18,12 @@
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Cedarville+Cursive&family=Comfortaa:wght@300&family=Hind:wght@300&family=IBM+Plex+Sans&family=Josefin+Sans:wght@100&family=Poppins:wght@200;500&family=Roboto&family=Roboto+Slab:wght@300;400&family=Satisfy&family=Ubuntu:wght@300;400&family=Varela+Round&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loco.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- <script src="./index.js" defer></script> -->
     <!-- <script src="./script2.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="script3.js" defer></script>
 </head>
@@ -225,7 +227,8 @@
 
 
                 <h3 class="heading-form"
-                    style="padding: 60px 0px 10px 0px; border-bottom: 2px solid #0a288b8a;margin-top: 65px">Personal
+                    style="padding: 60px 0px 10px 0px; border-bottom: 2px solid #0a288b8a;margin-top: 65px"
+                    id="pd-title">Personal
                     Details</h3>
 
                 <div class="form-control">
@@ -872,7 +875,8 @@
 
                 <li style="padding:20px 0px 0px 15px; display: flex; align-items: baseline;">
                     <label for="">Yes</label>
-                    <input style="margin-left: 10px; margin-right: 10px;" type="radio" name="laptop" id="laptopid" required>
+                    <input style="margin-left: 10px; margin-right: 10px;" type="radio" name="laptop" id="laptopid"
+                        required>
                     <div class="form-control4"></div>
                     <label for="">No</label>
                     <input style="margin-left: 10px;" type="radio" name="laptop" required>
@@ -967,34 +971,15 @@
         <p>Copyright © 2021 KGE Technologies</p>
     </footer> -->
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script>
+
+        
+
         var loader = document.getElementById('loader-container');
         window.addEventListener('load', () => {
             loader.style.display = 'none';
         })
-
-
-
-        // (function(){
-        //     $('form > input').keyup(function(){
-        //         var empty = false;
-        //         $('form > input').each(function(){
-        //             if($(this).val()==''){
-        //                 empty=true;
-        //             }
-        //         });
-
-        //         if(empty){
-        //             $('#btntext').attr('disabled','disabled');
-        //         }else{
-        //             $('#btntext').removeAttr('disabled');
-        //         }
-        //     });
-        // })()    
-
-
-
-
     </script>
 
 
