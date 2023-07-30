@@ -425,7 +425,7 @@ const validateF12 = () => {
     //     }   
     // }
 
-    
+    gendernotclick();
 
 
 }
