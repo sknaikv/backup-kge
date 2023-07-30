@@ -1008,6 +1008,19 @@
     border-color: var(--error-color);
     animation: var(--animation);
   }
+/* 
+  .form-content.success input[type="date"]{
+    border-color: var(--success-color);
+  }
+
+  .form-content.error input[type="date"]{
+     border-color: var(--error-color);
+    animation: var(--animation);
+  } */
+
+  .form-control{
+    width: 100%;
+  }
 
   .form-control small {
     color: var(--error-color);
@@ -1053,6 +1066,9 @@
 
 
 
+  .form-control2,.form-control3,.form-control4,.form-control5,.form-control6{
+    display: contents;
+  }
 
 
   /* ************************************************************* */

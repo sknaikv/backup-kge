@@ -1017,7 +1017,7 @@ const sendDataf6 = (sRate, count) => {
             'Your Form has been submitted Successfully!'
         )
         setTimeout(() => {
-            location.reload('index.html#top');
+            location.reload();
         }, 3500);
 
     }
