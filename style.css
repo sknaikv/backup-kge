@@ -5,6 +5,19 @@
     --success-color: green;
     --error-color: #BC383E;
     --default-color: rgb(174 174 174);
+    --animation: shake 0.5s;
+  }
+
+  @keyframes shake{
+    25%{
+      transform: translateX(5px);
+    }
+    50%{
+      transform: translateX(-5px);
+    }
+    75%{
+      transform: translateX(5px);
+    }
   }
 
 
@@ -973,6 +986,7 @@
 
   .form-control.error input {
     border-color: var(--error-color);
+    animation: var(--animation);
   }
 
   .form-control small {
@@ -993,6 +1007,8 @@
 
   .form-control.error fieldset {
     border-color: var(--error-color);
+    animation: var(--animation);
+
   }
 
   .form-control.success textarea {
@@ -1001,10 +1017,13 @@
 
   .form-control.error textarea {
     border-color: var(--error-color);
+    animation: var(--animation);
+
   }
 
   .form-control.error select {
     border-color: var(--error-color);
+    animation: var(--animation);
   }
 
   .form-control.success select {
@@ -1015,58 +1034,10 @@
 
 
 
+
   /* ************************************************************* */
 
-  .form-control2 {
-    display: contents;
-  }
-
-  .form-control2.success input {
-    border-color: var(--success-color);
-  }
-
-  .form-control2.error input {
-    border-color: var(--error-color);
-  }
-
-  .form-control2 small {
-    color: var(--error-color);
-    /* position: relative; */
-    bottom: 0;
-    left: 0;
-    visibility: hidden;
-  }
-
-  .form-control2.error small {
-    visibility: visible;
-  }
-
-  .form-control2.success fieldset {
-    border-color: var(--success-color);
-  }
-
-  .form-control2.error fieldset {
-    border-color: var(--error-color);
-  }
-
-  .form-control2.success textarea {
-    border-color: var(--success-color);
-  }
-
-  .form-control2.error textarea {
-    border-color: var(--error-color);
-  }
-
-  .form-control2.error select {
-    border-color: var(--error-color);
-  }
-
-  .form-control2.success select {
-    border-color: var(--success-color);
-  }
-
-
-
+  
 
 
 

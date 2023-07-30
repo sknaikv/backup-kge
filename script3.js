@@ -120,6 +120,11 @@ function inputtrans(){
     
 }
 
+// var element = document.getElementsByClassName("fname");
+
+// TweenMax.to(element, 0.1, {x:"+=20", yoyo:true, repeat:-1});
+// TweenMax.to(element, 0.1, {x:"-=20", yoyo:true, repeat:-1});
+
 inputtrans();
 progresstrans();
 formtrans();
@@ -284,7 +289,7 @@ const validateF1 = () => {
     if (emailVal === "") {
         setErrormsg(email, 'Email is required');
     } else if (!isEmail(emailVal)) {
-        setErrormsg(email, 'Email is required');
+        setErrormsg(email, 'Enter a valid email address (eg: yourname@domain.com');
     } else {
         setSuccessmsg(email);
     }
@@ -1092,9 +1097,6 @@ window.addEventListener("scroll", () => {
         topview.classList.remove("active");
     }
 })
-
-
-
 
 
 // function checkRequired(inputArr) {
