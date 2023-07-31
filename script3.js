@@ -1018,7 +1018,7 @@ const sendDataf6 = (sRate, count) => {
         )
         setTimeout(() => {
             location.reload();
-        }, 3000);
+        }, 2500);
 
     }
 }

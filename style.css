@@ -178,7 +178,7 @@
 
   #tnC{
     margin-right: 10px;
-    pointer-events: none;
+    /* pointer-events: none; */
   }
   #tnC:checked{
     accent-color: #0a288b;
@@ -190,6 +190,11 @@
 
   .radio-item>input>label{
     padding-left: 25px;
+    cursor: pointer;
+  }
+
+  .tncp{
+    cursor: pointer;
   }
 
   .container {
@@ -1169,9 +1174,9 @@
   }
 
 
-  /* .form-control.error label{
-    animation: var(--animation);
-  } */
+  .form-control.error label{
+    border-color: var(--error-color);
+  }
 
 
   .form-control2,.form-control3,.form-control4,.form-control5,.form-control6{
