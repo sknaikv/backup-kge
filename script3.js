@@ -1018,7 +1018,7 @@ const sendDataf6 = (sRate, count) => {
         )
         setTimeout(() => {
             location.reload();
-        }, 3500);
+        }, 3000);
 
     }
 }
@@ -1047,7 +1047,7 @@ const successMsgF6 = () => {
 
 const validateF6 = () => {
 
-    //validate gender
+    //validate tnc
     let tncbox = document.getElementById('fieldset');
     const tnc = document.querySelector('#tnC');
 
@@ -1143,3 +1143,10 @@ window.addEventListener("scroll", () => {
 //     leftnav.classList.toggle('active');
 //     listnames.classList.toggle('active');
 // })
+
+// const box = document.querySelector('#form1');
+// const box2 = document.querySelector('#form2');
+// const rect = box.getBoundingClientRect();
+// const rect2 = box2.getBoundingClientRect();
+
+// console.log(rect,rect2);
